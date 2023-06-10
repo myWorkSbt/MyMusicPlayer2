@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEF"
+        tools:context=".Activity.MusicPlayer">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="79dp"
+            android:id="@+id/audioImage"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/btnPlays"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="10dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/play"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/btnPrevious"
+            android:layout_width="57dp"
+            android:layout_height="43dp"
+            android:padding="10dp"
+            android:src="@drawable/previous"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/btnPlays"
+            app:layout_constraintEnd_toStartOf="@id/btnPlays"
+            app:layout_constraintTop_toTopOf="@id/btnPlays" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="57dp"
+            android:layout_height="43dp"
+            android:padding="10dp"
+            android:src="@drawable/next"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/btnPlays"
+            app:layout_constraintStart_toEndOf="@id/btnPlays"
+            app:layout_constraintTop_toTopOf="@id/btnPlays" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+    </data>
+</layout>
